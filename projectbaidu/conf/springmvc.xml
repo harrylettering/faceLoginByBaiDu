@@ -35,25 +35,5 @@
 			<value>40960</value>
 		</property>	
 	</bean>	
-
-<!-- <mvc:interceptors>
-<mvc:interceptor>
-<mvc:mapping path="/**"></mvc:mapping>
-<bean class="com.school.eat.interception.permissionInterception"></bean>
-</mvc:interceptor>
-</mvc:interceptors> -->
-<!-- <mvc:interceptors>
-		配置自定义的拦截器
-		<bean class="com.atguigu.springmvc.interceptors.FirstInterceptor"></bean>
-		
-		配置拦截器(不)作用的路径
-		<mvc:interceptor>
-			<mvc:mapping path="/emps"/>
-			<bean class="com.school.springmvc.interceptors.SecondInterceptor"></bean>
-		</mvc:interceptor>
-		
-		配置 LocaleChanceInterceptor
-		<bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor"></bean>
-	</mvc:interceptors>-->
 	
 	</beans>
