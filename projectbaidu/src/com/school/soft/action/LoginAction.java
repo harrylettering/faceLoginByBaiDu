@@ -21,13 +21,13 @@ public class LoginAction {
 
 	@RequestMapping(value = "/insertFace", method = RequestMethod.POST)
 	@ResponseBody
-	public String insert(@RequestBody Map<String, Object> map, HttpServletRequest request) throws Exception {//。／／／／／／／／／／／先要人脸检测，我没有检测
+	public String insert(@RequestBody Map<String, Object> map, HttpServletRequest request) throws Exception {//。／／／／／／／／／／／先要人脸检测
 		String result = null;
 		String userPhone=null;
 		//System.out.println("map.size: "+ map.size());
 		HttpSession httpSession=request.getSession();
 		Logger logger=LoggerFactory.getLogger(LoginAction.class);
-		String access_token="24.38cf113a8e743e56c976cab83d58207f.2592000.1535554542.282335-11219291";////////////////////你的token
+		String access_token="*************************************************";////////////////////你的token
 		String img=null;
 		if(map.containsKey("img"))
 		{
@@ -96,7 +96,7 @@ public class LoginAction {
 		String result = null;
 		String face_token = null;
 		//String face_token_source = (String) httpSession.getAttribute("face_token");
-		String access_token="24.38cf113a8e743e56c976cab83d58207f.2592000.1535554542.282335-11219291";/////////////待定
+		String access_token="***************************************************";/////////////待定
 		Logger logger=LoggerFactory.getLogger(LoginAction.class);
 		if(img!=null)
 		{
@@ -136,9 +136,9 @@ public class LoginAction {
 	{
 		String access_token=null;
 		// 官网获取的 API Key 更新为你注册的
-		String clientId = "2O47iLcXVgjAvhl0LctAO0M7";
+		String clientId = "**************************";
 		// 官网获取的 Secret Key 更新为你注册的
-		String clientSecret = "rOVboXkm3g2Mdmp1ImXpxS2fVXlEsd6x";
+		String clientSecret = "****************************";
 		access_token=WebFace.getAuth(clientId,clientSecret);
 		System.out.println(access_token);
 		if(access_token!=null)
