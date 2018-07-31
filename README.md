@@ -1,4 +1,5 @@
 # faceLoginByBaiDu
+#人脸识别
 对百度人脸识别api进行修改和包装，使用起来更加方便，并带有人脸识别注册登录和更新实例
 
 LoginAction.java   
